@@ -1,0 +1,14 @@
+.form-handler {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.form-control {
+    border: 2px solid dashed blue;
+}
+
+.form-handler>button {
+    width: 50px;
+    margin: 10px;
+}
