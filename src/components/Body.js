@@ -13,7 +13,7 @@ const Body = () => {
         {!uploadClick ? (
           <span>Please Upload Your File</span>
         ) : (
-          <span>Your File has been uploaded</span>
+          <span>Your File is ready to be uploaded</span>
         )}
       </div>
       <div>
