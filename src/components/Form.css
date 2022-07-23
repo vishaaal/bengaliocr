@@ -1,14 +1,54 @@
 .form-handler {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.form-handler-borderBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4em;
+  /* border: 2px dashed blue !important; */
+}
+
+.form-handler > button {
+  width: 50px;
+  margin: 10px;
 }
 
 .form-control {
-    border: 2px solid dashed blue;
+  display: none;
 }
 
-.form-handler>button {
-    width: 50px;
-    margin: 10px;
+.form-handler-submitBtn {
+  margin: 30px;
+  animation-name: swirl;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes swirl {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.effect-form-handler-uploadIcon {
+  animation-name: pop;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pop {
+    from {
+        transform: scaleX(30px);
+    }
+    to{ 
+    transform: scaleX(60px);
+    }
 }

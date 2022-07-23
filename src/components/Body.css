@@ -1,0 +1,48 @@
+.body--container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem;
+  /* background-color: blanchedalmond; */
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.body--container--mainHeading {
+  font-size: 4.7rem;
+  flex-direction: column;
+  display: flex;
+  letter-spacing: 2.5px;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+.body--container--mainHeading > span {
+  color: white;
+  margin: 30px 0px;
+  letter-spacing: 0.3px;
+  font-size: 2.7rem;
+  opacity: 0.4;
+}
+
+.body--container--animationText{
+  color: white;
+  opacity: 0.7;
+  font-family: 'Fira Sans', sans-serif;
+  animation-name: popup;
+  /* color: whitesmoke; */
+  margin: 30px 0px ;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  font-size: 2rem;
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
