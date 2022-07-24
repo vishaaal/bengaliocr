@@ -6,7 +6,9 @@ const Body = () => {
   return (
     <div className="body--container">
       <div className="body--container--mainHeading">
-        <p>Heading In the Middle</p>
+        <div class="typewriter">
+          <p>Bengali OCR</p>
+        </div>
         <span>Sub-heading</span>
       </div>
       <div className="body--container--animationText">
