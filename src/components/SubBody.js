@@ -1,28 +1,28 @@
+import { useEffect } from "react";
 import "./SubBody.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const SubBody = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="subBody--container">
       <div className="subBody--grid--container">
-        <div className="grid--container--left">
+        <div data-aos="fade-right" className="grid--container--left">
           <h1>Why</h1>
           <h1>Choose</h1>
           <h1>Us</h1>
         </div>
-        <div className="grid--container--right">
+        <div data-aos="fade-left" className="grid--container--right">
           <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque corrupti quos
-            dolores et quas molestias excepturi sint occaecati cupiditate non
-            provident, similique sunt in culpa qui officia deserunt mollitia
-            animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
-            est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-            eligendi optio cumque nihil impedit quo minus id quod maxime placeat
-            facere possimus, omnis voluptas assumenda est, omnis dolor
-            repellendus. Temporibus autem quibusdam et aut officiis debitis aut
-            rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint
-            et molestiae non recusandae. Itaque earum rerum hic tenetur a
-            sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-            consequatur aut perferendis doloribus asperiores repellat.
+            Our team tries to solve the problem of recognizing the handwritten language just
+            by simply uploading a picture . Our team has developed a state of the art classification
+            system for robust perfomance which helps us to deliver results faster and at 0 cost to our 
+            users. The wide range of letters present in the bengali literature hinders the accuracy of 
+            most classifiers present in the web , except ours. Tested in ideal conditions with 
+            ideal images , our classifier results 100% accuracy.
           </p>
         </div>
       </div>

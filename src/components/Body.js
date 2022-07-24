@@ -9,7 +9,7 @@ const Body = () => {
         <div class="typewriter">
           <p>Bengali OCR</p>
         </div>
-        <span>Sub-heading</span>
+        <span>Handwritten Character Classification </span>
       </div>
       <div className="body--container--animationText">
         {!uploadClick ? (

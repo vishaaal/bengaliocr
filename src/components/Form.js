@@ -2,16 +2,14 @@ import { useRef, useState } from "react";
 import "./Form.css";
 import { BsFillCloudArrowUpFill } from "react-icons/bs";
 import { FiArrowRightCircle } from "react-icons/fi";
-const Form = ({uploadBtnClick , uploadBtnHandler}) => {
-  const [mouseEnter, setMouseEnter] = useState(false);
+const Form = ({ uploadBtnClick, uploadBtnHandler }) => {
   const formUploadBtn = useRef();
   const [file, setFilePath] = useState("");
-  const [submit, setSubmit] = useState(false)
+  const [submit, setSubmit] = useState(false);
   const handleFileUploadChange = (e) => {
     setFilePath(e.target.files[0]);
     uploadBtnHandler(true);
-    console.log("Uploaded");
-};
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,7 +18,6 @@ const Form = ({uploadBtnClick , uploadBtnHandler}) => {
   };
 
   const handleUploadClick = () => {
-    console.log("Uploading ...");
     formUploadBtn.current.click();
   };
   return (
@@ -28,17 +25,16 @@ const Form = ({uploadBtnClick , uploadBtnHandler}) => {
       <div className="form-handler-borderBox">
         {!uploadBtnClick && (
           <BsFillCloudArrowUpFill
-            onMouseEnter={() => setMouseEnter(false)}
-            onMouseLeave={() => setMouseEnter(false)}
             onClick={handleUploadClick}
             fontSize="6em"
-            className={`${mouseEnter ? "effect-form-handler-uploadIcon" : "form-handler-uploadIcon"}`}
+            className="form-handler-uploadIcon"
           />
         )}
         <input
           type="file"
           ref={formUploadBtn}
           onChange={handleFileUploadChange}
+          accept="image/png, image/gif, image/jpeg"
           className="form-control"
           multiple=""
         />
@@ -50,7 +46,7 @@ const Form = ({uploadBtnClick , uploadBtnHandler}) => {
           />
         )}
       </div>
-    {submit && <span>File has been Submitted</span>}
+      {submit && <span>File has been Submitted</span>}
     </form>
   );
 };
