@@ -3,6 +3,7 @@ import "./navbar.css";
 
 const Navbar = () => {
   const [mouseEvent, setMouseEnter] = useState(false);
+  const [mouseEvent2, setMouseEnter2] = useState(false);
   return (
     <div className="navbar--container">
       <ul className="navbar--container--list">
@@ -23,15 +24,15 @@ const Navbar = () => {
         </li>
         <li
           className={`${
-            mouseEvent
+            mouseEvent2
               ? "animate--navbar--container--listItems "
               : "navbar--container--listItems"
           }`}
           onMouseEnter={() => {
-            setMouseEnter(true);
+            setMouseEnter2(true);
           }}
           onMouseLeave={() => {
-            setMouseEnter(false);
+            setMouseEnter2(false);
           }}
         >
           Your Uploads
