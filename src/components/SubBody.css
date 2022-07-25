@@ -1,0 +1,28 @@
+.subBody--container {
+    padding: 2rem 9rem;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+
+.subBody--grid--container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 15em;
+  justify-content: center;
+  align-items: center;
+}
+.grid--container--left
+{
+    font-size: 3rem;
+    /* letter-spacing: 2.5px; */
+}
+.grid--container--left>h1 {
+    margin: 10px 0px;
+}
+.grid--container--right
+{
+    
+    font-size: 20px;
+    /* letter-spacing: 2.5px; */
+}

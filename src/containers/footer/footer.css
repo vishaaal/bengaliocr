@@ -1,0 +1,10 @@
+.footer--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  letter-spacing: 4px;
+  font-family: "Fira Sans", sans-serif;
+  color: white;
+  padding: 30px;
+}

@@ -1,10 +1,19 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* overflow-y: hidden; */
 }
 
-body{
-    background: var(--color-bg) ;
+.gradient__bg {
+  background: rgb(123,195,147);
+  background: linear-gradient(153deg, rgba(123,195,147,1) 0%, rgba(49,183,194,1) 100%);
+}
+
+::-webkit-scrollbar { 
+    display: none;  
 }
