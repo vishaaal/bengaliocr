@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="footer--container">
       <p>
-        Made with <FcLike /> by Group 20
+        Made with <FcLike /> by Group 45
       </p>
     </div>
   );
