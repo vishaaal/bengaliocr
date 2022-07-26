@@ -2,6 +2,18 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
+  transition: all 0.8s;
+  text-decoration: none;
+}
+
+.form-handler:hover{
+  color: white;
+  cursor: pointer;
+  transform: scale(1.2);
+  text-decoration: none;
+}
+.form-handler:active :visited :link {
+  text-decoration: none;
 }
 
 .form-handler-borderBox {
