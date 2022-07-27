@@ -46,7 +46,7 @@ const Form = ({ uploadBtnClick, uploadBtnHandler }) => {
           />
         )}
       </div>
-      {submit && <span>File has been Submitted</span>}
+      {/* {submit && <span className="">File has been Submitted</span>} */}
     </form>
   );
 };
